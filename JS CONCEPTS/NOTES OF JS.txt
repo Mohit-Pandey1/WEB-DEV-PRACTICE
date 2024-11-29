@@ -1,0 +1,12 @@
+NOTES OF JS : 
+PROMISES : 
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+
+https://www.freecodecamp.org/news/javascript-promise-object-explained/#heading-how-a-promise-works
+
+fetch in js : 
+https://www.javascripttutorial.net/web-apis/javascript-fetch-api/
+
+oops in js : 
+https://www.freecodecamp.org/news/object-oriented-programming-javascript/
