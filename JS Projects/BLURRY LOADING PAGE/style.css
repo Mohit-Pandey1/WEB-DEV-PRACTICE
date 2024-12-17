@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-  
-body {
+
+body{
     font-family: 'Ubuntu', sans-serif;
     display: flex;
     align-items: center;
@@ -15,8 +15,17 @@ body {
 }
 
 .bg{
-    background-image: url(cr7.jpg) no-repeat center center/cover;
+    background: url('cr7.jpg') no-repeat center center/cover;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -30px;
+    left: -30px;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+    filter: blur(70px);
+}
+
+.loading-text{
+    font-size: 50px;
+    color: #fff;
 }
