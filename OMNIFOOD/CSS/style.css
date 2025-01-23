@@ -355,13 +355,16 @@
 
 .gallery-item{
     overflow: hidden;
+    position: relative;
 }
 
 .gallery-img{
     display: block;
     width: 100%;
-    transition: all 0.4s;
+    height: auto;
+    transition: all 0.4s ease;
 }
+
 .gallery-img:hover{
     transform: scale(1.1);
 }
