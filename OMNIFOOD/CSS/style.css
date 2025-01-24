@@ -68,6 +68,18 @@
 }
 
 
+@media(max-width: 1200px){
+    .section-hero{
+        background-color: orange;
+    }
+}
+
+@media(max-width: 600px){
+    .section-hero{
+        border: 20px dashed blue;
+    }
+}
+
 .hero{
     max-width: 130rem;
     margin: 0 auto;
