@@ -74,6 +74,9 @@ html{
     /* Percentage of user's browser font-size setting */
     font-size: 62.5%;
     overflow-x: hidden;
+
+    /* Does not work on Safar browser */
+    /* scroll-behavior: smooth; */
 }
 
 body{
@@ -83,7 +86,7 @@ body{
     color: #555;
 
     /* Only works if there is nothing absolutely positioned in relation to body */
-    overflow-x: hidden;
+    overflow-x: hidden;  
 }
 
 /* --> 1 rem = 16px -> 50rem = 800px */
