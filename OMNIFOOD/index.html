@@ -80,8 +80,14 @@
                 </div>
             </div>
             <div class="hero-img-box">
-                <img src="IMG/hero.png"
-                class="hero-img" alt="Women enjoying food, meals in storage container & food bowls on a table" />
+                <picture>
+                    <source srcset="IMG/hero.webp" type="image/webp" />
+
+                    <source srcset="IMG/hero.png" type="image/png" />
+
+                    <img src="IMG/hero.png"
+                        class="hero-img" alt="Women enjoying food, meals in storage container & food bowls on a table" />
+                </picture>
             </div>
         </div>
     </section>
@@ -428,20 +434,26 @@
                             Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime. And the first meal is on us!
                         </p>
 
-                        <form class="cta-form" action="#">
+                        <form class="cta-form" name="sign up" netlify>
                             <div>
                                 <label for="full-name">Full Name</label>
-                                <input id="full-name" type="text" placeholder="Your Name" required/>
+                                <input id="full-name" type="text" placeholder="Your Name"
+                                name="full-name"
+                                required/>
                             </div>
 
                             <div>
                                 <label for="email">Email Address</label>
-                                <input id="email" type="email" placeholder="a@gmail.com" required/>
+                                <input id="email" type="email" placeholder="a@gmail.com" 
+                                name="email"
+                                required/>
                             </div>
 
                             <div>
                                 <label for="select-where">Where did your hear about us</label>
-                                <select name="" id="select-where" required>
+                                <select name="" id="select-where" 
+                                name="select-where"
+                                required>
                                     <option value="">Please Choose one   option:</option>
                                     <option value="friends">
                                         Friends & Family
