@@ -1,5 +1,5 @@
 var prg = document.querySelector("#progress");
-document.querySelector("h3")
+var h3 = document.querySelector("h3")
 
 var count = 0;
 var int = setInterval(function(){
