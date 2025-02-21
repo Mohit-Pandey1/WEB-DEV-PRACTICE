@@ -19,7 +19,15 @@ toggle.addEventListener('click', (e) => {
         html.classList.add('dark')
         e.target.innerHTML = 'Light Mode'
     }
-})
+
+    const clock = document.querySelector('.clock');
+    clock.style.transition = 'all 0.5s ease-in-out';
+
+    const needles = document.querySelectorAll('.needle, .center-point, .time, .date')
+    needles.forEach(needle => {
+        needle.style.transition = 'all 0.5s ease-in-out';
+    });
+});
 
 function setTime(){
     const time = new Date();

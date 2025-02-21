@@ -23,6 +23,34 @@ html.dark{
     color: var(--primary-color);
 }
 
+html.dark .clock{
+    border: 5px solid cyan;
+    border-radius: 50%;
+    box-shadow: 0 0 20px cyan;
+    transition: all 0.5s ease-in-out;
+}
+
+html.dark .needle{
+    box-shadow: 0 0 10px cyan;
+    transition: all 0.5s ease-in-out;
+}
+
+html.dark .needle.second{
+    background-color: cyan;
+}
+
+html.dark .center-point{
+    background-color: cyan;
+    box-shadow: 0 0 10px cyan;
+    transition: all 0.5s ease-in-out;
+}
+
+html.dark .date,
+html.dark .time{
+    text-shadow: 0 0 10px cyan;
+    transition: all 0.5s ease-in-out;
+}
+
 body{
     font-family: 'Heebo', sans-serif;
     display: flex;
@@ -132,6 +160,6 @@ body{
     justify-content: center;
     line-height: 18px;
     transition: all 0.5s ease-in;
-    font-size: 12px;
-    
+    font-size: 12px;   
 }
+
