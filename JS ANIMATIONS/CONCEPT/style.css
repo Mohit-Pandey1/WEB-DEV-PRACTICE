@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#box1{
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+}
+
+#box2{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+}
+
+#box3{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(46, 5, 180);
+}
+
