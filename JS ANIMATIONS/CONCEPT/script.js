@@ -18,24 +18,32 @@
 //     backgroundColor: "blue"
 // })
 
-var t = gsap.timeline()
+// var t = gsap.timeline()
 
-t.to("#box1",{
-    x: 1200,
-    rotate: 360,
-    scale:0.5,
+// t.to("#box1",{
+//     x: 1200,
+//     rotate: 360,
+//     scale:0.5,
+//     duration:2,
+//     delay:1
+// })
+// t.to("#box2",{
+//     x: 1200,
+//     rotate: 360,
+//     scale:0.5,
+//     duration:2,
+// })
+// t.to("#box3",{
+//     x: 1200,
+//     rotate: 360,
+//     scale:0.5,
+//     duration:2,
+// })
+
+
+gsap.from("#page1", "#circle", {
+    scale: 0,
+    delay:1,
     duration:2,
-    delay:1
-})
-t.to("#box2",{
-    x: 1200,
-    rotate: 360,
-    scale:0.5,
-    duration:2,
-})
-t.to("#box3",{
-    x: 1200,
-    rotate: 360,
-    scale:0.5,
-    duration:2,
+    rotate:360
 })
