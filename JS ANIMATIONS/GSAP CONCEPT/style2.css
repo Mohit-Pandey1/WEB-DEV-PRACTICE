@@ -33,21 +33,3 @@ html,body{
     width: 100%;
     background-color: rgb(113, 111, 108);
 } */
- 
-#page1{
-    height: 100%;
-    width: 100%;
-    background-color: rgb(27, 108, 194);
-}
-
-#page2{
-    height: 100%;
-    width: 100%;
-    background-color: rgb(137, 28, 28);
-}
-
-#page3{
-    height: 100%;
-    width: 100%;
-    background-color: black;
-}
