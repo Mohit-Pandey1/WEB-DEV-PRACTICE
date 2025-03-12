@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 html, body{
@@ -14,7 +14,6 @@ html, body{
     height: 100vh;
     width: 100%;
     background-color: #E3E3C4;
-
 }
 
 #page2{
@@ -31,6 +30,10 @@ html, body{
     font-weight: 400;
     font-family: PP woodland;
     line-height: 4.8vw;
+}
+
+#page2 h1 span{
+    font-family: PP woodland;
 }
 
 #page3{
