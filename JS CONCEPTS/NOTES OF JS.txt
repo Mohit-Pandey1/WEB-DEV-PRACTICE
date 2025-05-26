@@ -1,3 +1,10 @@
+Ulitimate Modern js tutorial
+https://javascript.info/
+
+whole full fleged notes: 
+https://www.geeksforgeeks.org/javascript/
+
+
 NOTES OF JS : 
 PROMISES : 
 
@@ -8,5 +15,51 @@ https://www.freecodecamp.org/news/javascript-promise-object-explained/#heading-h
 fetch in js : 
 https://www.javascripttutorial.net/web-apis/javascript-fetch-api/
 
+asyn/await: 
+https://www.javascripttutorial.net/javascript-async-await/
+
 oops in js : 
 https://www.freecodecamp.org/news/object-oriented-programming-javascript/
+
+prototypes in js : 
+https://www.freecodecamp.org/news/a-beginners-guide-to-javascripts-prototype/
+
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes
+
+call in js: 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call
+
+this in js : 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
+
+
+Classes and constructor in js: 
+https://javascript.info/classes
+https://www.freecodecamp.org/news/javascript-classes-how-they-work-with-use-case/
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+
+Inheritance, prototypal Inheritance, prototype chain
+https://www.geeksforgeeks.org/javascript-inheritance/
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
+
+Bind in js:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind
+https://javascript.info/bind
+https://www.javascripttutorial.net/javascript-bind/
+
+Property descriptor and flags in js:
+https://javascript.info/property-descriptors
+https://dev.to/varundey/property-descriptors-in-javascript-5bb0
+
+DefineProperty() in js: 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty
+
+Get in js:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get
+
+Set in js: 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/set
+
+Property getters and setters in js: 
+https://javascript.info/property-accessors
+
