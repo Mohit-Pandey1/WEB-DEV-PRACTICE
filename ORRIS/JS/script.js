@@ -24,18 +24,42 @@ const linkAction = () =>{
 navlink.forEach(n => n.addEventListener('click', linkAction))
 
 /*=============== SWIPER SNEAKERS ===============*/
+let swiperTitles = new Swiper(".home__titles", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: "auto",
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+
 let swiperImages = new Swiper('.home__swiper', {
   loop: true,
 
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
 
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+
+  thumbs: {
+    swiper: swiperTitles,
+  }
 });
+
+// swiperImages.controller.control = swiperTitles
+// swiperTitles.controller.control = swiperImages
 
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
+
+const bgHeader = () => {
+  const header = document.getElementById('header')
+  this.scrollY >= 50 ? header.classList.add('bg-header')
+                     : header.classList.remove('bg-header')
+}
+
+window.addEventListener('scroll', bgHeader)
