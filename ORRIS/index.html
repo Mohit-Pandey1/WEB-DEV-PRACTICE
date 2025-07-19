@@ -15,6 +15,9 @@
     <!-- Main css -->
     <link rel="stylesheet" href="CSS/style.css">
 
+    <!-- Form css -->
+     <link rel="stylesheet" href="CSS/form.css">
+
     <title>Orris - Love Luxury Shoes</title>
 </head>
 <body>
@@ -43,7 +46,7 @@
                     </li>
 
                     <li>
-                        <a href="#" class="nav__link">Contact</a>
+                        <a href="#" class="nav__link" id="contact_btn">Sign Up</a>
                     </li>
                 </ul>
 
@@ -171,10 +174,48 @@
         </section>
     </main>
 
+    <!-- LOGIN FORM -->
+     <div class="login" id="login-form">
+        <form name="signup" method="post" data-netlify="true" class="login__content">
+            <i class="ri-close-line login__close" id="login-close"></i>
+
+            <h2 class="login__title">Get Early Access</h2>
+
+            <div class="login__input-group">
+                <div class="login__input-box">
+                    <input type="email" name="email" required placeholder="Enter your email" class="login__input">
+                    <label class="login__label">Email</label>
+                </div>
+
+                <div class="login__input-box">
+                    <input type="password" name="password" required placeholder="Create a password" class="login__input">
+                    <label class="login__label">Password</label>
+                </div>
+            </div>
+
+            <a href="#" class="login__forgot">Forgot password?</a>
+
+            <button type="submit" class="login__button">Sign Up</button>
+            <p class="login__or">or sign up with</p>
+
+            <div class="login__social">
+                <a href="#" class="login__social-link"><i class="ri-google-fill"></i></a>
+                <a href="#" class="login__social-link"><i class="ri-facebook-box-fill"></i></a>
+                <a href="#" class="login__social-link"><i class="ri-apple-fill"></i></a>
+            </div>
+
+            <p class="login__register">
+               Already have an account? <a href="#">Login</a>
+            </p>
+        </form>
+     </div>
+
+
     <!-- Swiper js file -->
     <script src="JS/swiper-bundle.min.js"></script>
 
     <!-- Main js file -->
     <script src="JS/script.js"></script>
+    <script src="JS/form.js"></script>
 </body>
 </html>
