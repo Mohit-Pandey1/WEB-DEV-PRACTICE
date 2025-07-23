@@ -3,6 +3,14 @@ const navMenu = document.getElementById('nav__menu')
 const navToggle = document.getElementById('nav__toggle')
 const navClose = document.getElementById('nav__close')
 
+// DARK/LIGHT THEME
+const themeButton = document.getElementById('theme-toggle')
+const darkTheme = 'dark-theme'
+const body = document.body;
+
+const selectedTheme = localStorage.getItem('selected-theme')
+const getCurrentTheme = () => body.classList.contains(darkTheme) ? 'dark' : 'light';
+
 if(navToggle){
     navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu')
@@ -49,6 +57,18 @@ let swiperImages = new Swiper('.home__swiper', {
     swiper: swiperTitles,
   }
 });
+
+// Logic for Dark/Light theme
+
+if(selectedTheme){
+  body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
+  themeButton.checked = (selectedTheme === 'dark')
+}
+
+themeButton.addEventListener('change', () => {
+  body.classList.toggle(darkTheme)
+  localStorage.setItem('selected-theme', getCurrentTheme())
+})
 
 // swiperImages.controller.control = swiperTitles
 // swiperTitles.controller.control = swiperImages
