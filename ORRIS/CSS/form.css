@@ -172,7 +172,77 @@
   text-decoration: underline;
 }
 
+/* NEON DARK THEME FOR FORM */
+.dark-theme .login__content {
+    background-color: var(--body-color);
+    border: 1px solid var(--third-color);
+    box-shadow: 0 0 20px hsla(198, 90%, 65%, .3);
+}
+
+.dark-theme .login__title {
+    color: var(--title-color);
+    text-shadow: 0 0 8px hsla(198, 90%, 65%, .6);
+}
+
+.dark-theme .login__close {
+    color: var(--text-color);
+}
+.dark-theme .login__close:hover {
+    color: var(--third-color);
+}
+
+.dark-theme .login__input {
+    background-color: transparent;
+    border-color: hsla(198, 90%, 65%, .2);
+    color: var(--title-color);
+}
+
+.dark-theme .login__input:focus {
+    border-color: var(--third-color);
+    box-shadow: 0 0 12px hsla(198, 90%, 65%, .6);
+}
+
+.dark-theme .login__label {
+    background-color: var(--body-color);
+    color: var(--third-color);
+}
+
+.dark-theme .login__forgot {
+    color: var(--third-color);
+}
+.dark-theme .login__forgot:hover {
+    color: var(--white-color);
+}
+
+.dark-theme .login__button {
+    background-color: transparent;
+    color: var(--third-color);
+    border: 2px solid var(--third-color);
+    box-shadow: 0 0 10px hsla(198, 90%, 65%, .5);
+}
+.dark-theme .login__button:hover {
+    background-color: var(--third-color);
+    color: var(--body-color);
+    box-shadow: 0 0 20px hsla(198, 90%, 65%, .7);
+}
+
+.dark-theme .login__social-link {
+    color: var(--text-color);
+}
+.dark-theme .login__social-link:hover {
+    color: var(--third-color);
+    filter: drop-shadow(0 0 8px hsla(198, 90%, 65%, .8));
+}
+
+.dark-theme .login__register a {
+    color: var(--title-color);
+}
+.dark-theme .login__register a:hover {
+    color: var(--third-color);
+}
+
 /*=============== BREAKPOINTS ===============*/
+
 /* For smaller devices */
 @media screen and (max-width: 420px) {
   .login__content {
