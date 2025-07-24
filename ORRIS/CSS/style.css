@@ -172,13 +172,10 @@ img{
 
 }
 
-
-/* Show menu */
 .show-menu{
     left: 0;
 }
 
-/* Background header */
 .bg-header{
     box-shadow: 0 2px 16px hsla(0, 0%, 0%, .1);
 }
@@ -314,7 +311,6 @@ img{
     row-gap: 2rem;
 }
 
-/* Swiper class */
 .swiper{
     margin-inline: initial;
 }
@@ -348,7 +344,6 @@ img{
     color: var(--black-color);
 }
 
-/* Swiper animation */
 .swiper-slide-active .home__title{
     transform: translateY(0);
     opacity: 1;
@@ -666,7 +661,7 @@ body.dark-theme{
 
 .dark-theme .swiper-button-prev,
 .dark-theme .swiper-button-next{
-    border: 1px solid var((--text-color));
+    border: 1px solid var(--text-color);
     border-radius: 50%;
     width: 40px;
     height: 40px;
