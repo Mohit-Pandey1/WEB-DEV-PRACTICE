@@ -1,0 +1,42 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+
+/* VARIABLES CSS */
+
+:root{
+    --header-height: 3.5rem; 
+
+    /* colors */
+    --first-color: hsl(43, 90%, 50%);
+    --first-color-alt: hsl(43, 88%, 48%);
+    --text-color: hsl(0, 0%, 42%);
+    --text-color-lighten: hsl(0, 0%, 42%);
+    --black-color: hsl(0, 0%, 8%);
+    --white-color: hsl(0, 0%, 100%);
+    --body-color: hsl(0, 0%, 98%);
+    --body-second-color: hsl(28, 70%, 55%);
+    --shadow-img: -8px 8px 16px hsla(0, 0%, 0%, .2);
+
+    /* font and typo */
+    --body-font: "Montserrat", sans-serif;
+    --biggest-font-size: 4.5rem;
+    --big-font-size: 2.5rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /* font weight */
+    --font-regular: 400;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    --font-extra-bold: 800;
+
+    /* z index */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+
+}
+
