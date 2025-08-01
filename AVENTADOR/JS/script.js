@@ -40,6 +40,16 @@ const swiperHome = new Swiper('.home__swiper', {
     // }
 });
 
+//DYNAMIC CAR INFO
+const carData = [
+    {
+        title: "AVENTADOR LP <br/> 770-4 SVJ",
+        modelNumber: "770-4",
+        imageSrc: "IMG/home-car-1.png",
+        power: "770"
+    }
+]
+
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 const bgHeader = () => {
     const header = document.getElementById('header')
