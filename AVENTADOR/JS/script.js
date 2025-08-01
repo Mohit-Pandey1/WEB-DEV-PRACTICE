@@ -77,4 +77,6 @@ const scrollActive = () => {
 }
 
 window.addEventListener('scroll', scrollActive)
+
+
 /*=============== SCROLL REVEAL ANIMATION ===============*/
