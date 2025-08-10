@@ -46,9 +46,60 @@ const carData = [
         title: "AVENTADOR LP <br/> 770-4 SVJ",
         modelNumber: "770-4",
         imageSrc: "IMG/home-car-1.png",
-        power: "770"
+        power: "770 CV (566 kW) <br/> 8.500 rpm",
+        speed: "350 Km/h",
+        acceleration: "2.8s"
+    },
+    {
+        title: "AVENTADOR LP <br/> 780-4 ULTIMAE",
+        modelNumber: "780-4",
+        imageSrc: "IMG/info-car.png",
+        power: "780 CV (574 kW) <br/> 8.500 rpm",
+        speed: "355 Km/h",
+        acceleration: "2.8 - 2.9s"
+    },
+    {
+        title: "AVENTADOR S <br/> ROADSTER",
+        modelNumber: "740-4",
+        imageSrc: "IMG/home-car-3.png",
+        power: "740 CV (544 kW) <br/> 8.400 rpm",
+        speed: "350 Km/h",
+        acceleration: "3.0s"
+    },
+    {
+        title: "AVENTADOR LP <br/> 750-4 SUPERVELOCE",
+        modelNumber: "750-4",
+        imageSrc: "IMG/home-car-4.png",
+        power: "750 CV (522 kW) <br/> 8.400 rpm",
+        speed: "350 Km/h",
+        acceleration: "2.8s"
     }
-]
+];
+
+const carTitleEl = document.getElementById('car-title');
+const carModelNumberEl = document.getElementById('car-model-number');
+const carImageEl = document.getElementById('car-image');
+const carPowerEl = document.getElementById('car-power');
+const carSpeedEl = document.getElementById('car-speed');
+const carAccelerationEl = document.getElementById('car-acceleration');
+
+
+function updateCarInfo(car){
+    carTitleEl.innerHTML = car.title;
+    carModelNumberEl.textContent = car.modelNumber;
+    carImageEl.src = car.imageSrc;
+    carPowerEl.innerHTML = car.power;
+    carSpeedEl.textContent = car.speed;
+    carAccelerationEl.textContent = car.acceleration;
+}
+
+swiperHome.on('slideChange', function(){
+    const currentCarIndex = this.activeIndex;
+    const chosenCar = carData[currentCarIndex];
+    updateCarInfo(chosenCar)
+})
+
+updateCarInfo(carData[0])
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 const bgHeader = () => {
