@@ -302,6 +302,30 @@ img{
     top: -1rem;
 }
 
+.home__pepperoni{
+    right: -.5rem;
+    top: 2rem;
+}
+
+.home__mushroom{
+    right: -.5rem;
+    bottom: 2rem;
+}
+
+.home__olive{
+    bottom: -1rem;
+}
+
+.home__leaf-2{
+    left: -.5rem;
+    bottom: 2rem;
+}
+
+.home__tomato{
+    left: -.5rem;
+    top: 2rem;
+}
+
 
 
 /* BUTTON */
@@ -322,6 +346,21 @@ img{
 }
 
 /* ABOUT */
+.about{
+    background-color: var(--container-color);
+}
+
+.about__container{
+    row-gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.about__data{
+    position: relative;
+    text-align: center;
+}
+
+
 
 /* POPULAR */
 
