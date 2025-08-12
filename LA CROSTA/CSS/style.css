@@ -226,6 +226,9 @@ img{
 }
 
 /* Add shadow header */
+.shadow-header{
+    box-shadow: 0 4px 16px hsla(353, 100%, 8%, .1);
+}
 
 /* Active Link */
 
@@ -385,6 +388,44 @@ img{
 
 
 /* POPULAR */
+.popular__container{
+    grid-template-columns: 100%;
+    row-gap: 3rem;
+    padding-bottom: 2rem;
+}
+
+.popular__data .section__title{
+    margin-bottom: 1rem;
+}
+
+.popular__description{
+    text-align: center;
+}
+
+.popular__swiper{
+    position: relative;
+}
+
+.popular__dish{
+    width: 220px;
+    filter: var(--shadow-big-img);
+    position: absolute;
+    inset: 0;
+    top: -.85rem;
+    margin-inline: auto;
+}
+
+.popular__card,
+.popular__img{
+    width: 200px;
+}
+
+.popular__title{
+    font-size: var(--h3-font-size);
+    color: var(--first-color);
+    margin-top: 2rem;
+    text-align: center;
+}
 
 /* SWIPER CLASS */
 

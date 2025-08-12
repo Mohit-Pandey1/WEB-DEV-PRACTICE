@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
 
     <!-- SWIPER CSS -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="CSS/swiper-bundle.min.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="CSS/style.css">
@@ -118,7 +118,38 @@
 
         <!-- POPULAR -->
         <section class="popular section" id="popular">
+            <div class="popular__contianer container grid">
+                <div class="popular__data">
+                    <h2 class="section__title">Discover <br> Popular Orders</h2>
 
+                    <p class="popular__description">
+                        Select the best prepared and delicious flavors. 
+                        We have collected some popular recipes from around 
+                        the world for you to choose your favorite.
+                    </p>
+                </div>
+
+                <div class="popular__swiper">
+                    <img src="IMG/popular-dish.png" alt="image" class="popular__dish">
+
+                    <div>
+                        <article class="popular__card">
+                            <img src="IMG/popular-1.png" alt="image" class="popular__img">
+                            <h3 class="popular__title">Margherita Pizza</h3>
+                        </article>
+
+                        <article class="popular__card">
+                            <img src="IMG/popular-2.png" alt="image" class="popular__img">
+                            <h3 class="popular__title">Mushroom Pizza</h3>
+                        </article>
+
+                        <article class="popular__card">
+                            <img src="IMG/popular-3.png" alt="image" class="popular__img">
+                            <h3 class="popular__title">Pepperoni Pizza</h3>
+                        </article>
+                    </div>
+                </div> 
+            </div>
         </section>
 
         <!-- RECIPE -->
@@ -151,5 +182,8 @@
 
     <!-- MAIN JS -->
     <script src="JS/script.js"></script>
+
+    <!-- SWIPER JS -->
+    <script src="JS/swiper-bundle.min.js"></script>
 </body>
 </html>
