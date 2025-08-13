@@ -428,6 +428,10 @@ img{
 }
 
 /* SWIPER CLASS */
+.swiper{
+    margin-inline: initial;
+    /* overflow: visible; */
+}
 
 
 /* RECIPE */
