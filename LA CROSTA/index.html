@@ -1,46 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- FAVICON -->
-    <link rel="shortcut icon" href="favicon_io/favicon-32x32.png" type="image/x-icon">
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
 
-    <!-- REMIXICONS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css"
+    />
 
-    <!-- SWIPER CSS -->
-    <link rel="stylesheet" href="CSS/swiper-bundle.min.css">
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="CSS/style.css">
-    <title>La Crosta - The Taste of Italy</title>
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
 
-    <!-- header -->
+    <title>La Crosta</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">
-                <img src="favicon_io/favicon.ico" alt="image">
-                La Crosta
+                <img src="IMG/logo-pizza.svg" alt="image">
+                Pizza
             </a>
 
-            <div class="nav__menu" id="nav-menu">
+            <div class="nav__menu" id="nav__menu">
                 <ul class="nav__list">
                     <li>
                         <a href="#home" class="nav__link">Home</a>
                     </li>
-                    
+
                     <li>
-                        <a href="#about" class="nav__link">About us</a>
+                        <a href="#about" class="nav__link">About Us</a>
                     </li>
-                    
+
                     <li>
                         <a href="#popular" class="nav__link">Popular</a>
                     </li>
-                    
+
                     <li>
                         <a href="#products" class="nav__link">Products</a>
                     </li>
@@ -50,140 +57,52 @@
                     </li>
                 </ul>
 
-                <!-- Close Button -->
+                <!-- CLose button -->
                 <div class="nav__close" id="nav-close">
                     <i class="ri-close-large-line"></i>
                 </div>
             </div>
 
+            <!-- Toggle Button -->
             <div class="nav__toggle" id="nav-toggle">
                 <i class="ri-apps-2-fill"></i>
             </div>
         </nav>
     </header>
 
-    <!-- MAIN -->
+    <!--==================== MAIN ====================-->
     <main class="main">
-        <!-- HOME -->
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div class="home__data">
-                    <h1 class="home__title">Crispy And <br> Delicious Pizzas</h1>
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home"></section>
 
-                    <p class="home__description">
-                        Order the best pizzas to end your hunger 
-                        and make your family moments more 
-                        memorable, place your order now.
-                    </p>
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about"></section>
 
-                    <a href="#products" class="button">Order Pizza Now</a>
+      <!--==================== POPULAR ====================-->
+      <section class="popular section" id="popular"></section>
 
-                    <img src="IMG/sticker-pizza.svg" alt="image" class="home__sticker-1">
-                    <img src="IMG/sticker-leaf.svg" alt="image" class="home__sticker-2">
-                </div>
+      <!--==================== RECIPE ====================-->
+      <section class="recipe section"></section>
 
-                <div class="home__images">
-                    <img src="IMG/home-pizza.png" alt="image" class="home__pizza">
-                    <img src="IMG/home-board.png" alt="image" class="home__board">
+      <!--==================== PRODUCTS ====================-->
+      <section class="products section" id="products"></section>
 
-                    <img src="IMG/home-leaf-1.png" alt="image" class="home__ingredient home__leaf-1">
-                    <img src="IMG/home-leaf-2.png" alt="image" class="home__ingredient home__leaf-2">
-                    <img src="IMG/home-pepperoni.png" alt="image" class="home__ingredient home__pepperoni">
-                    <img src="IMG/home-mushroom.png" alt="image" class="home__ingredient home__mushroom">
-                    <img src="IMG/home-olive.png" alt="image" class="home__ingredient home__olive">
-                    <img src="IMG/home-tomato.png" alt="image" class="home__ingredient home__tomato">           
-                </div>
-            </div>
-        </section>
-
-        <!-- ABOUT -->
-        <section class="about section" id="about">
-            <div class="about__container container grid">
-                <div class="about__data">
-                    <h2 class="section__title">Learn More About <br> Our History</h2>
-
-                    <p class="about__description">
-                        The secret to success is the best ingredients 
-                        to make a better pizza. Today we strive for 
-                        perfection, just as we have been doing for 15 years when we first opened the pizzeria in Lima - Peru.
-                    </p>
-
-                    <a href="#popular" class="button">The Best Pizzas</a>
-                    <img src="IMG/sticker-cheese.svg" alt="image" class="about__sticker">
-                </div>
-
-                <img src="IMG/about-img.png" alt="image" class="about__img">
-            </div>
-        </section>
-
-        <!-- POPULAR -->
-        <section class="popular section" id="popular">
-            <div class="popular__contianer container grid">
-                <div class="popular__data">
-                    <h2 class="section__title">Discover <br> Popular Orders</h2>
-
-                    <p class="popular__description">
-                        Select the best prepared and delicious flavors. 
-                        We have collected some popular recipes from around 
-                        the world for you to choose your favorite.
-                    </p>
-                </div>
-
-                <div class="popular__swiper swiper">
-                    <img src="IMG/popular-dish.png" alt="image" class="popular__dish">
-
-                    <div class="swiper-wrapper">
-                        <article class="popular__card swiper-slide">
-                            <img src="IMG/popular-1.png" alt="image" class="popular__img">
-                            <h3 class="popular__title">Margherita Pizza</h3>
-                        </article>
-
-                        <article class="popular__card swiper-slide">
-                            <img src="IMG/popular-2.png" alt="image" class="popular__img">
-                            <h3 class="popular__title">Mushroom Pizza</h3>
-                        </article>
-
-                        <article class="popular__card swiper-slide">
-                            <img src="IMG/popular-3.png" alt="image" class="popular__img">
-                            <h3 class="popular__title">Pepperoni Pizza</h3>
-                        </article>
-                    </div>
-                </div> 
-            </div>
-        </section>
-
-        <!-- RECIPE -->
-        <section class="recipe section">
-
-        </section>
-
-        <!-- PRODUCTS -->
-        <section class="products section" id="products">
-
-        </section>
-
-        <!-- CONTACT -->
-        <section class="contact section" id="contact">
-
-        </section>
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact"></section>
     </main>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        
-    </footer>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer"></footer>
 
-    <!-- SCROLL UP -->
+    <!--========== SCROLL UP ==========-->
 
-    <!-- SCROLL REVEAL -->
-    <script src=""></script>
-    <!-- SWIPER JS -->
+    <!--=============== SCROLLREVEAL ===============-->
     <script src=""></script>
 
-    <!-- SWIPER JS -->
-    <script src="JS/swiper-bundle.min.js"></script>
+    <!--=============== SWIPER JS ===============-->
+    <script src=""></script>
 
-    <!-- MAIN JS -->
-    <script src="JS/script.js"></script>
-</body>
+    <!--=============== MAIN JS ===============-->
+    <script src="js/main.js"></script>
+  </body>
 </html>
