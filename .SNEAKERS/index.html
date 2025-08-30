@@ -247,6 +247,41 @@
                     <button class="fButton">Join!</button>
                 </div>
             </div>
+
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Share your Feedback</h1>
+                <button class="fButton" id="toggleFeedbackForm">Give Feedback!</button>
+            
+                <div id="feedbackFormContainer" style="display: none; margin-top: 20px;">
+                    <form name="Website-feedback" method="post" netlify class="feedback-form">
+                        <label for="feedbackName">Your Name:</label><br>
+                        <input type="text" id="feedbackName" name="name" class="fInput" required><br>
+
+                        <label for="feedbackEmail">Your Email:</label><br>
+                        <input type="email" id="feedbackEmail" name="email" class="fInput"><br>
+
+                        <label style="margin-top: 10px; display: block;">How much do you like our website?</label><br>
+
+                        <div class="star-rating" id="starRating">
+                            <input type="radio" id="star5" name="rating" value="5" required><label for="star5" title="5 stars">★</label>
+                            <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 stars">★</label>
+                            <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 stars">★</label>
+                            <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 stars">★</label>
+                            <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 star">★</label>
+                        </div>
+
+
+                        <p id="reviewTextBox" style="display: none; margin-top: 15px;">
+                            <label for="review">Tell us more about your experience:</label><br>
+
+                            <textarea name="review" id="review" rows="5" class="fInput"></textarea>
+                        </p>
+
+                        <button type="submit" class="fButton" style="margin-top: 15px;">Send Feedback</button>
+                    </form>
+                </div>
+            </div>
+
             <div class="footerRightMenu">
                 <h1 class="fMenuTitle">Follow Us</h1>
                 <div class="fIcons">

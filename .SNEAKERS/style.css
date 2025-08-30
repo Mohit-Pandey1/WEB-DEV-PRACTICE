@@ -426,12 +426,18 @@ footer{
 
 .fInput{
     padding: 5px;
+    width: 80%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
 .fButton{
     padding: 5px;
     background-color: #111;
     color: #fff;
+    border: none;
+    cursor: pointer;
 }
 
 .fIcons{
@@ -448,6 +454,63 @@ footer{
     font-weight: 300;
     font-size: 14px;
 }
+
+.feedback-form{
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.feedback-form label{
+    color: #f0f0f0;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.feedback-form .fInput::placeholder{
+    color: #bbb;
+}
+
+.feedback-form textarea.fInput{
+    resize: vertical;
+    min-height: 80px;
+}
+
+.star-rating{
+    display: inline-block;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+.star-rating input[type="radio"]{
+    display: none;
+}
+
+.star-rating label{
+    font-size: 1.8rem;
+    color: #777;
+    cursor: pointer;
+    padding: 0 3px;
+    transition: color 0.2s ease-in-out;
+}
+
+.star-rating input[type="radio"]:checked ~ label{
+    color: gold;
+}
+
+.star-rating label:hover 
+.star-rating label:hover ~ label{
+    color: #ffda60;
+}
+
+.star-rating input[type="radio"]:checked + label:hover,
+.star-rating input[type="radio"]:checked + label:hover ~ label,
+.star-rating label:hover ~ input[type="radio"]:checked ~ label{
+    color: gold;
+}
+
 
 @media screen and (max-width:480px) {
     nav{
@@ -555,6 +618,14 @@ footer{
         width: 90%;
         align-items: center;
         background-color: whitesmoke;
+    }
+
+    .footerRight .feedback-form{
+        width: 100%;
+    }
+
+    .footerRight .feedback-form .fInput{
+        width: calc(100% - 20px);
     }
 
     .payment{

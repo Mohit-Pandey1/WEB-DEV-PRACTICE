@@ -137,3 +137,27 @@ productButton.addEventListener("click", ()=>{
 close.addEventListener("click", () =>{
   payment.style.display = "none";
 });
+
+
+document.addEventListener('DOMContentLoaded', function(){
+  const toggleFeedbackFormButton = document.getElementById('toggleFeedbackForm');
+  const feedbackFormContainer = document.getElementById('feedbackFormContainer');
+  const starRatingDiv = document.getElementById('starRating');
+  const reviewTextBox = document.getElementById('reviewTextBox');
+  const reviewTextArea = document.getElementById('review');
+
+  toggleFeedbackFormButton.addEventListener('click', function(){
+    if(feedbackFormContainer.style.display === 'none' || 
+      feedbackFormContainer.style.display === ''){
+        feedbackFormContainer.style.display = 'block';
+      } 
+      else{
+        feedbackFormContainer.style.display = 'none';
+      }
+  })
+
+  starRatingDiv.addEventListener('change', function(){
+    reviewTextBox.style.display = 'block';
+    reviewTextArea.setAttribute('required', 'required');
+  })
+})
