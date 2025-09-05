@@ -104,6 +104,77 @@
         </section>
     </main>
 
+    <!-- Footer sec -->
+    <footer class="site-footer">
+        <button class="feedback__button" id="feedback_btn">Give Feedback</button>
+    </footer>
+
+    <!-- Login form -->
+     <div class="login" id="login-form">
+        <div class="login__content">
+            <i class="ri-close-line login__close" id="login-close"></i>
+            <h2 class="login__title">Welcome Back</h2>
+            <div class="login__input-group">
+                <div class="login__input-box">
+                    <input type="email" required placeholder="Enter your email" class="login__input">
+                    <label class="login__label">Email</label>
+                </div>
+                <div class="login__input-box">
+                    <input type="password" required placeholder="Enter your password" class="login__input">
+                    <label for="login__label">Password</label>
+                </div>
+            </div>
+            <a href="#" class="login__forgot">Forgot Password?</a>
+            <button class="login__button">Login</button>
+            <p class="login__or">or login with</p>
+            <div class="login__social">
+                <a href="#" class="login__social-link"><i class="ri-google-fill"></i></a>
+                <a href="#" class="login__social-link"><i class="ri-facebook-box-fill"></i></a>
+                <a href="#" class="login__social-link"><i class="ri-apple-fill"></i></a>
+            </div>
+
+            <p class="login__register">
+                Don't have an account? <a href="#">Register</a>
+            </p>
+        </div>
+     </div>
+
+    <!-- Feedback form stars from here -->
+    <div class="login" id="feedback-form">
+        <form name="feedback" netlify method="post" class="login__content">
+            <input type="hidden" name="form-name" value="feedback">
+            <i class="ri-close-line login__close" id="feedback-close"></i>
+            <h2 class="login__title">We Value Your Feedback</h2>
+            <div class="login__input-group">
+                <div class="login__input-box">
+                    <input type="text" name="name" required placeholder="Enter your name" class="login__input">
+                    <label class="login__label">Name</label>
+                </div>
+                <div class="login__input-box">
+                    <input type="email" name="email" required placeholder="Enter your email" class="login__input">
+                    <label class="login__label">Email</label>
+                </div>
+                <div class="feedback__rating-group">
+                    <label class="feedback__rating-label">How'd we do?</label>
+                    <div class="feedback__star-rating">
+                        <i class="ri-star-line" data-value="1"></i>
+                        <i class="ri-star-line" data-value="2"></i>
+                        <i class="ri-star-line" data-value="3"></i>
+                        <i class="ri-star-line" data-value="4"></i>
+                        <i class="ri-star-line" data-value="5"></i>
+                    </div>
+                    <input type="hidden" name="rating" id="rating-value" value="">
+                </div>
+
+                <div class="login__input-box feedback__review-box hidden">
+                    <textarea name="review" placeholder="Tell us more..." class="login__input" style="height: 100px; resize: vertical;"></textarea>
+                    <label class="login__label">Your review</label>
+                </div>
+            </div>
+            <button type="submit" class="login__button">Submit Feedback</button>
+        </form>
+    </div>
+
     <!-- Scripts -->
     <script src="JS/script.js"></script>
     <script src="JS/form.js"></script> 
