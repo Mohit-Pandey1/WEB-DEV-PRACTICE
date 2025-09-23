@@ -161,3 +161,53 @@ sr.reveal('.info__img', {distance: '120px'})
 sr.reveal('.info__number', {origin: 'bottom', distance: '80px', delay: 800})
 sr.reveal('.info__group', {interval: 100, delay: 1300})
 sr.reveal('.footer__container')
+
+
+// ---------------FEEDBACK FORM --------------
+const feedbackBtn = document.getElementById('feedback-btn');
+const feedbackModal = document.getElementById('feedback-modal');
+const feedbackClose = document.getElementById('feedback-close');
+
+
+if(feedbackBtn){
+    feedbackBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        feedbackModal.classList.add('show-feedback');
+    });
+}
+
+if(feedbackClose){
+    feedbackClose.addEventListener('click', () => {
+        feedbackModal.classList.remove('show-feedback');
+    })
+}
+feedbackModal.addEventListener('click', (e) => {
+    if(e.target === feedbackModal){
+        feedbackModal.classList.remove('show-feedback');
+    }
+})
+
+const stars = document.querySelectorAll('.feedback__star');
+const ratingValueInput = document.getElementById('rating-value');
+const textareaBox = document.getElementById('feedback-textarea-box');
+
+stars.forEach(star => {
+    star.addEventListener('click', () => {
+        const rating = star.getAttribute('data-rating');
+        ratingValueInput.value = rating;
+
+        stars.forEach(s => {
+            if(parseInt(s.getAttribute('data-rating')) <= parseInt(rating)){
+                s.classList.add('active');
+                s.classList.remove('ri-star-line');
+                s.classList.add('ri-star-fill');
+            } else{
+                s.classList.remove('active');
+                s.classList.remove('ri-star-fill');
+                s.classList.add('ri-star-line');
+            }
+        })
+
+        textareaBox.classList.add('show');
+    })
+})

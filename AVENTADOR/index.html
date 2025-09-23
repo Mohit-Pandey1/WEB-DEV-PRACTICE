@@ -286,6 +286,10 @@
           <li>
             <a href="" class="footer__link">Forums</a>
           </li>
+
+          <li>
+            <a href="#" class="footer__link" id="feedback-btn">Feedback</a>
+          </li>
         </ul>
 
         <div class="footer__social">
@@ -307,6 +311,48 @@
         &#169; All Rights Reserved By The Eagle Brothers
       </span>
     </footer>
+
+    <!-- ---------FEEDBACK MODAL--------- -->
+    <div class="feedback__modal" id="feedback-modal">
+      <div class="feedback__content">
+        <i class="ri-close-line feedback__close" id="feedback-close"></i>
+        <h2 class="section__title contact__title">Give Us Your Feedback</h2>
+        <p class="feedback__description">We'd love to hear what you think of our website</p>
+
+        <form name="feedback" class="feedback__form grid">
+          <input type="hidden" name="form-name" value="feedback">
+
+
+          <div class="contact__inputs grid">
+            <div class="contact__box">
+              <label for="feedback-name" class="contact__label">Name</label>
+              <input type="text" id="feedback-name" placeholder="Enter your name" name="name" class="contact__input" required />
+            </div>
+
+            <div class="contact__box">
+              <label for="feedback-email" class="contact__label">Email</label>
+              <input type="email" id="feedback-email" placeholder="Enter your email" name="email" class="contact__input" required />
+            </div>
+          </div>
+
+          <div class="feedback__rating">
+            <label class="contact__label">How would you rate our website?</label>
+            <div class="feedback__stars">
+              <i class="ri-star-line feedback__star" data-rating="1"></i>
+              <i class="ri-star-line feedback__star" data-rating="2"></i>
+              <i class="ri-star-line feedback__star" data-rating="3"></i>
+              <i class="ri-star-line feedback__star" data-rating="4"></i>
+              <i class="ri-star-line feedback__star" data-rating="5"></i>
+            </div>
+            <input type="hidden" name="rating" id="rating-value" value="0">
+          </div>
+
+          <button type="submit" class="button contact__button">
+            SUBMIT FEEDBACK <i class="ri-arrow-right-s-line"></i>
+          </button>
+        </form>
+      </div>
+    </div>
 
     <!--========== SCROLL UP ==========-->
     <a href="#" class="scrollup" id="scroll-up">
