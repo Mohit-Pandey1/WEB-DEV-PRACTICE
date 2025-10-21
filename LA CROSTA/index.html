@@ -1,34 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--=============== FAVICON ===============-->
-    <link
-      rel="shortcut icon"
-      href="assets/img/favicon.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
     <!--=============== REMIXICONS ===============-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
 
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="" />
+    <!-- SWIPER CSS -->
+
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="CSS/style.css">
 
-    <title>La Crosta</title>
-  </head>
-  <body>
-    <!--==================== HEADER ====================-->
+    <title>LA CROSTA</title> 
+</head>
+<body>
+    <!-- HEADER -->
     <header class="header" id="header">
-        <nav class="nav container">
+        <nav class="nav conatiner">
             <a href="#" class="nav__logo">
                 <img src="IMG/logo-pizza.svg" alt="image">
                 Pizza
@@ -39,17 +31,17 @@
                     <li>
                         <a href="#home" class="nav__link">Home</a>
                     </li>
-
+                    
                     <li>
                         <a href="#about" class="nav__link">About Us</a>
                     </li>
-
+                    
                     <li>
                         <a href="#popular" class="nav__link">Popular</a>
                     </li>
 
                     <li>
-                        <a href="#products" class="nav__link">Products</a>
+                        <a href="#product" class="nav__link">Products</a>
                     </li>
                     
                     <li>
@@ -57,7 +49,7 @@
                     </li>
                 </ul>
 
-                <!-- CLose button -->
+                <!-- Close button -->
                 <div class="nav__close" id="nav-close">
                     <i class="ri-close-large-line"></i>
                 </div>
@@ -67,52 +59,73 @@
             <div class="nav__toggle" id="nav-toggle">
                 <i class="ri-apps-2-fill"></i>
             </div>
+
         </nav>
     </header>
 
-    <!--==================== MAIN ====================-->
+    <!-- MAIN -->
     <main class="main">
-      <!--==================== HOME ====================-->
-      <section class="home section" id="home">
-        <div class="home__container container grid">
-          <div class="home__data">
+        <!-- HOME -->
+        <section class="home section" id="home">
+            <div class="home__container conatiner grid">
+                <div class="home__data">
+                    <h1 class="home__title">Crispy And <br> Delicious Pizzas</h1>
 
-          </div>
+                    <p class="home__description">
+                        Order the best pizzas to end your hunger
+                        and make your family moments more memorable,
+                        place your order now.
+                    </p>
 
-          <div class="home__images">
-            
-          </div>
-        </div>
-      </section>
+                    <a href="#products" class="button">Order Pizza Now</a>
 
-      <!--==================== ABOUT ====================-->
-      <section class="about section" id="about"></section>
+                    <img src="IMG/sticker-pizza.svg" alt="image" class="home__sticker-1">
+                    <img src="IMG/sticker-leaf.svg" alt="image" class="home__sticker-2">
+                </div>
 
-      <!--==================== POPULAR ====================-->
-      <section class="popular section" id="popular"></section>
+                <div class="home__images">
+                    <img src="IMG/home-pizza.png" alt="image" class="home__pizza">
+                    <img src="IMG/home-board.png" alt="image" class="home__board">
 
-      <!--==================== RECIPE ====================-->
-      <section class="recipe section"></section>
+                    <img src="IMG/home-leaf-1.png" alt="image" class="home__leaf-1">
+                    <img src="IMG/home-leaf-2.png" alt="image" class="home__leaf-2">
+                </div>
+            </div>
+        </section>
 
-      <!--==================== PRODUCTS ====================-->
-      <section class="products section" id="products"></section>
+        <!-- ABOUT -->
+        <section class="about section" id="about">
 
-      <!--==================== CONTACT ====================-->
-      <section class="contact section" id="contact"></section>
+        </section>
+
+        <!-- POPULAR -->
+        <section class="popular section" id="popular">
+
+        </section>
+
+        <!-- RECIPE -->
+        <section class="recipe section" id="recipe">
+
+        </section>
+
+        <!-- PORDUCTS -->
+        <section class="products section" id="products">
+
+        </section>
+
+        <section class="contact section" id="contact">
+
+        </section>
+
+        <!-- SCROLL UP -->
+        
+        <!-- SCROLL REVEAL -->
+        <script src=""> </script>
+
+        <!-- SWIPER JS -->
+
+        <!-- JS -->
+        <script src="JS/script.js"></script>
     </main>
-
-    <!--==================== FOOTER ====================-->
-    <footer class="footer"></footer>
-
-    <!--========== SCROLL UP ==========-->
-
-    <!--=============== SCROLLREVEAL ===============-->
-    <script src=""></script>
-
-    <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
-
-    <!--=============== MAIN JS ===============-->
-    <script src="js/script.js"></script>
-  </body>
+</body>
 </html>
