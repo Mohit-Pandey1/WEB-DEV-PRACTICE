@@ -219,32 +219,275 @@ img{
 }
 
 /* Add shadow header */
-
+.shadow-header{
+    box-shadow: 0 4px 16px hsla(353, 100%, 8%, .1);
+}
 
 /* Active link */
 
 
 /*=============== HOME ===============*/
+.home__container{
+    padding-block: 2rem 3rem;
+    row-gap: 7rem;
+}
 
+.home__data{
+    position: relative;
+    text-align: center;
+}
+
+.home__title{
+    font-size: var(--biggest-font-size);
+}
+
+.home__description{
+    margin-block: 1rem 2rem;
+}
+
+.home__sticker-1,
+.home__sticker-2{
+    width: 40px;
+    position: absolute;
+    opacity: .7;
+}
+
+.home__sticker-1{
+    right: .75rem;
+    bottom: 2rem;
+    rotate: 30deg;
+}
+
+.home__sticker-2{
+    left: 2.5rem;
+    bottom: -4.5rem;
+}
+
+.home__images{
+    position: relative;
+    display: grid;
+    justify-items: center;
+    justify-self: center;
+}
+
+.home__ingredient{
+    width: 60px;
+    filter: var(--shadow-small-img);
+    position: absolute;
+    z-index: 2;
+}
+
+.home__board,
+.home__pizza{
+    filter: var(--shadow-big-img);
+}
+
+.home__pizza{
+    width: 300px;
+    z-index: 2;
+}
+
+.home__board{
+    width: 300px;
+    position: absolute;
+    bottom: -.5rem;
+    left: -.15rem;
+}
+
+.home__leaf-1{
+    top: -1rem;
+}
+
+.home__pepperoni{
+    right: -.5rem;
+    top: 2rem;
+}
+
+.home__mushroom{
+    right: -0.5rem;
+    bottom: 2rem;
+}
+
+.home__olive{
+    bottom: -1rem;
+}
+
+.home__leaf-2{
+    left: -.5rem;
+    bottom: 2rem;
+}
+
+.home__tomato{
+    left: -.5rem;
+    top: 2rem;
+}
 
 /*=============== BUTTON ===============*/
+.button{
+    display: inline-flex;
+    justify-content: center;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    padding: 1rem 1.5rem;
+    font-weight: var(--font-semi-bold);
+    border-radius: 4rem;
+    box-shadow: 0 8px 24px hsla(353, 100%, 8%, .4);
+    transition: background-color .4s;
+}
 
-
+.button:hover{
+    background-color: var(--first-color-alt);
+}
 /*=============== ABOUT ===============*/
+.about{
+    background-color: var(--container-color);
+}
 
+.about__container{
+    row-gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.about__data{
+    position: relative;
+    text-align: center;
+}
+
+.about__data .section__title{
+    margin-bottom: 1rem;
+}
+
+.about__description{
+    margin-bottom: 2rem;
+}
+
+.about__sticker{
+    width: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 2rem;
+}
+
+.about__img{
+    width: 320px;
+    justify-self: center;
+    filter: var(--shadow-big-img);
+}
 
 /*=============== POPULAR ===============*/
+.popular__container{
+    grid-template-columns: 100%;
+    row-gap: 3rem;
+    padding-bottom: 2rem;
+}
 
+.popular__data .section__title{
+    margin-bottom: 1rem;
+}
+
+.popular__description{
+    text-align: center;
+}
+
+.popular__swiper{
+    position: relative;
+}
+
+
+.popular__dish{
+    width: 220px;
+    filter: var(--shadow-big-img);
+    position: absolute;
+    inset: 0;
+    top: -.85rem;
+    margin-inline: auto;
+}
+
+.popular__card,
+.popular__img{
+    width: 200px;
+}
+
+.popular__img{
+    transform: scale(.8) rotate(-90deg);
+    transition: transform .4s;
+}
+
+.popular__title{
+    font-size: var(--h3-font-size);
+    color: var(--first-color);
+    margin-top: 2rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .4s;
+}
 
 /* Swiper class */
+.swiper{
+    margin-inline: initial;
+    overflow: visible;
+}
 
+:is(.swiper-slide-active, .swiper-slide-duplicate-active) .popular__img{
+    transform: scale(1) rotate(0);
+}
 
-
+:is(.swiper-slide-active, .swiper-slide-duplicate-active) .popular__title{
+    opacity: 1;
+}
 /*=============== RECIPE ===============*/
+.recipe{
+    background-color: var(--container-color);
+}
 
+.recipe__container{
+    row-gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.recipe__img{
+    width: 60px;
+    filter: var(--shadow-small-img);
+}
+
+.recipe__name{
+    font-size: var(--normal-font-size);
+    margin-bottom: .25rem;
+}
+
+.recipe__description{
+    font-size: var(--small-font-size);
+}
+
+.recipe__ingredient{
+    display: flex;
+    align-items: center;
+    column-gap: .75rem;
+}
+
+.recipe__image{
+    width: 320px;
+    justify-self: center;
+    filter: var(--shadow-big-img);
+}
 
 /*=============== PRODUCTS ===============*/
+.products__container{
+    padding-top: 3.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem 1.5rem;
+}
 
+.products__card{
+    position: relative;
+    background-color: var(--container-color);
+    padding: 5rem .75rem 1.25rem .75rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 24px hsla(353, 100%, 8%, .1);
+
+}
+
+/*TIME-STAMP 38:20  */
 
 /*=============== CONTACT ===============*/
 

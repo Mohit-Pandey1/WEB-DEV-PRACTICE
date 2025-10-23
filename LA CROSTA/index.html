@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
 
     <!-- SWIPER CSS -->
-
+    <link rel="stylesheet" href="CSS/swiper-bundle.min.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="CSS/style.css">
@@ -87,30 +87,186 @@
                     <img src="IMG/home-pizza.png" alt="image" class="home__pizza">
                     <img src="IMG/home-board.png" alt="image" class="home__board">
 
-                    <img src="IMG/home-leaf-1.png" alt="image" class="home__leaf-1">
-                    <img src="IMG/home-leaf-2.png" alt="image" class="home__leaf-2">
+                    <img src="IMG/home-leaf-1.png" alt="image" class="home__ingredient home__leaf-1">
+                    <img src="IMG/home-leaf-2.png" alt="image" class="home__ingredient home__leaf-2">
+                    <img src="IMG/home-pepperoni.png" alt="image" class="home__ingredient home__pepperoni">
+                    <img src="IMG/home-mushroom.png" alt="image" class="home__ingredient home__mushroom">
+                    <img src="IMG/home-olive.png" alt="image" class="home__ingredient home__olive">
+                    <img src="IMG/home-tomato.png" alt="image" class="home__ingredient home__tomato">
+
                 </div>
             </div>
         </section>
 
         <!-- ABOUT -->
         <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title">Learn More About <br> Our History</h2>
 
+                    <p class="about__description">
+                        The secret to success is the best ingredients
+                        to make a better pizza. Today we strive for 
+                        perfection, just as we have been doing for 15 years
+                        when we first opened the pizzeria in Lima - Peru.
+                    </p>
+
+                    <a href="#products" class="button">The Best Pizzas</a>
+
+                    <img src="IMG/sticker-cheese.svg" alt="image" class="about__sticker">
+                </div>
+
+                <img src="IMG/about-img.png" alt="image" class="about__img">
+            </div>
         </section>
 
         <!-- POPULAR -->
         <section class="popular section" id="popular">
+            <div class="popular__container container grid"> 
+                <div class="popular__data">
+                    <h2 class="section__title">Discover <br> Popular Orders</h2>
+                    <p class="popular__description">
+                        Select the best prepared and delicious flavors. We have collected some popular recipes from around the world for you to choose your favourite. 
+                    </p>
+                </div>
+                <div class="popular__swiper swiper">
+                    <img src="IMG/popular-dish.png" class="popular__dish" alt="image">
+                    <div class="swiper-wrapper">
+                        <article class="popular__card swiper-slide">
+                            <img src="IMG/popular-1.png" alt="image" class="popular__img">
+                            <h3 class="popular__title">Margherita Pizza</h3>
+                        </article>
 
+                        <article class="popular__card swiper-slide">
+                            <img src="IMG/popular-2.png" alt="image" class="popular__img">
+                            <h3 class="popular__title">Mushroom Pizza</h3>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <img src="IMG/popular-3.png" alt="image" class="popular__img">
+                            <h3 class="popular__title">Pepperoni Pizza</h3>
+                        </article>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- RECIPE -->
         <section class="recipe section" id="recipe">
+            <h2 class="section__title">Fresh And <br> Natural Ingredients</h2>
+            
+            <div class="recipe__container container grid">
+                <div class="recipe__list grid">
+                    <div class="recipe__ingredient">
+                        <img src="IMG/recipe-flour.png" alt="image" class="recipe__img">
 
+                        <div>
+                            <h3 class="recipe__name">Flour</h3>
+                            <p class="recipe__description">The best wheat from the field for the best flour.</p>
+                        </div>
+                    </div>
+
+                    <div class="recipe__ingredient">
+                        <img src="IMG/recipe-cheese.png" alt="image" class="recipe__img">
+
+                        <div>
+                            <h3 class="recipe__name">Cheese</h3>
+                            <p class="recipe__description">Indulge in cheese for a healthy future.</p>
+                        </div>
+                    </div>
+
+                    <div class="recipe__ingredient">
+                        <img src="IMG/recipe-sauces.png" alt="image" class="recipe__img">
+
+                        <div>
+                            <h3 class="recipe__name">Sauces</h3>
+                            <p class="recipe__description">Add a touch of salsa to your life and it will taste better.</p>
+                        </div>
+                    </div>
+
+                    <div class="recipe__ingredient">
+                        <img src="IMG/recipe-tomato.png" alt="image" class="recipe__img">
+
+                        <div>
+                            <h3 class="recipe__name">Vegetables</h3>
+                            <p class="recipe__description">Vegetables full of the essence of nature and organic.</p>
+                        </div>
+                    </div>
+
+                    <div class="recipe__ingredient">
+                        <img src="IMG/recipe-meat.png" alt="image" class="recipe__img">
+
+                        <div>
+                            <h3 class="recipe__name">Meat</h3>
+                            <p class="recipe__description">The best fresh meats for your health</p>
+                        </div>
+                    </div>
+                </div>
+
+                <img src="IMG/recipe-img.png" alt="image" class="recipe__imageg">
+            </div>
         </section>
 
-        <!-- PORDUCTS -->
+        <!-- PORDUCTS -->    
         <section class="products section" id="products">
+            <h2 class="section__title">The Pizza <br> Everyone Craves</h2>
 
+            <div class="products__container container grid">
+                <article class="products__card">
+                    <img src="IMG/product-1.png" alt="image" class="products__img">
+
+                    <h3 class="products__name">Vegetarian <br> Pizza</h3>
+                    <span class="products__price">$15</span>
+
+                    <button class="products__button">
+                        <i class="ri-shopping-bag-3-fill"></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="IMG/product-2.png" alt="image" class="products__img">
+
+                    <h3 class="products__name">Pepperoni <br> Pizza</h3>
+                    <span class="products__price">$10</span>
+
+                    <button class="products__button">
+                        <i class="ri-shopping-bag-3-fill"></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="IMG/product-3.png" alt="image" class="products__img">
+
+                    <h3 class="products__name">Margherita <br> Pizza</h3>
+                    <span class="products__price">$12</span>
+
+                    <button class="products__button">
+                        <i class="ri-shopping-bag-3-fill"></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="IMG/product-4.png" alt="image" class="products__img">
+
+                    <h3 class="products__name">Mushroom <br> Pizza</h3>
+                    <span class="products__price">$17</span>
+
+                    <button class="products__button">
+                        <i class="ri-shopping-bag-3-fill"></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="IMG/product-5.png" alt="image" class="products__img">
+
+                    <h3 class="products__name">Italian <br> Pizza</h3>
+                    <span class="products__price">$10</span>
+
+                    <button class="products__button">
+                        <i class="ri-shopping-bag-3-fill"></i>
+                    </button>
+                </article>
+            </div>
         </section>
 
         <section class="contact section" id="contact">
@@ -123,7 +279,7 @@
         <script src=""> </script>
 
         <!-- SWIPER JS -->
-
+        <script src="JS/swiper-bundle.min.js"></script>
         <!-- JS -->
         <script src="JS/script.js"></script>
     </main>
