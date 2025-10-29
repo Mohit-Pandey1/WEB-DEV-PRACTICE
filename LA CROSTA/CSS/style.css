@@ -554,10 +554,116 @@ img{
     row-gap: 2rem;
 }
 
-/*TIME-STAMP 46:21  */
+.contact__title{
+    margin-bottom: 1rem;
+}
+
+.contact__social{
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+}
+
+.contact__social-link{
+    font-size: 1.5rem;
+    color: var(--first-color);
+    transition: transform .4s;
+}
+
+.contact__social-link:hover{
+    transform: translateY(-.25rem);
+}
+ 
+.contact__address{
+    font-style: normal;
+}
+
+.contact__map{
+    color: var(--first-color);
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    margin-top: .5rem;
+    font-size: 1rem;
+}
+
+.contact__map span{
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.contact__img{
+    width: 300px;
+}
+
+.contact__sticker-1,
+.contact__sticker-2,
+.contact__sticker-3{
+    width: 40px;
+    position: absolute;
+    opacity: .7;
+}
+
+.contact__sticker-1{
+    top: 8rem;
+    left: 1.5rem;
+}
+
+.contact__sticker-2{
+    right: 1.5rem;
+    bottom: 23rem;
+}
+
+.contact__sticker-3{
+    left: 2rem;
+    bottom: 6rem;
+}
+ 
 /*=============== FOOTER ===============*/
+.footer{
+    padding-block: 4rem 2rem;
+}
 
+.footer__container,
+.footer__content{
+    row-gap: 3rem;
+}
 
+.footer__logo{
+    justify-self: center;
+    font-size: var(--h1-font-size);
+    font-family: var(--second-font);
+    color: var(--first-color);
+}
+
+.footer__title{
+    font-size: var(--h3-font-size);
+    margin-bottom: 1rem;
+}
+
+.footer__social,
+.footer__pay,
+.footer__form{
+    display: flex;
+    column-gap: 1rem;
+}
+
+.footer__social-link{
+    font-size: 1.5rem;
+    color: var(--first-color);
+    transition: transform .4s;
+}
+
+.footer__social-link:hover{
+    transform: translateY(-.25rem);
+}
+
+.footer__pay-img{
+    width: 30px;
+    filter: var(--shadow-small-img);
+}
+
+/*TIME-STAMP 54:41  */
 /*=============== SCROLL BAR ===============*/
 
 
