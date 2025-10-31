@@ -870,6 +870,175 @@ img{
         padding-block: 10rem 4rem; 
     }
 
+    .home__data{
+        text-align: initial;
+        margin-top: 2rem;
+    }
+
+    .home__description{
+        margin-bottom: 3.5rem;
+        padding-right: 6rem;
+    }
+
+    .home__sticker-1,
+    .home__sticker-2{
+        width: 50px;
+    }
+
+    .home__sticker-1{
+        right: 3rem;
+        top: 1rem;
+        bottom: 0;
+    }
+
+    .home__sticker-2{
+        left: 16rem;
+        bottom: 3rem;
+    }
+
+    .home__board,
+    .home__pizza{
+        width: 520px;
+    }
+
+    .home__board{
+        bottom: -1rem;
+    }
+
+    .home__ingredient{
+        width: 100px;
+    }
+
+    .home__leaf-1{
+        top: -2rem;
+    }
+
+    .home__pepperoni{
+        right: -1rem;
+        top: 3.5rem;
+    }
+
+    .home__mushroom{
+        right: -1rem;
+        bottom: 3.5rem;
+    }
+
+    .home__olive{
+        bottom: -2rem;
+    }
+
+    .home__leaf-2{
+        left: -1rem;
+        bottom: 3.5rem;
+    }
+
+    .home__tomato{
+        left: -1rem;
+        top: 3.5rem;
+    }
+
+    .about__container{
+        grid-template-columns: 450px 440px;
+        align-items: center;
+        column-gap: 6rem;
+    }
+
+    .about__img{
+        order: -1;
+        width: 450px;
+    }
+
+    .about__data{
+        text-align: initial;
+    }
+
+    .about__data .section__title{
+        margin-bottom: 1.5rem;
+        text-align: initial;
+    }
+
+    .about__description{
+        margin-bottom: 3.5rem;
+    }
+
+    .about__sticker{
+        width: 50px;
+        right: 6rem;
+        bottom: 4rem;
+    }
+
+    .popular__container{
+        grid-template-columns: 470px;
+        row-gap: 5rem;
+        padding-bottom: 3rem;
+    }
+
+    .popular__data .section__title{
+        margin-bottom: 3rem;
+    }
+
+    .popular__swiper{
+        width: 1000px;
+    }
+
+    .popular__card,
+    .popular__img{
+        width: 350px;
+    }
+
+    .popular__dish{
+        width: 390px;
+        top: -1.5rem;
+    }
+
+    .popular__title{
+        margin-top: 3rem;
+        font-size: var(--h2-font-size);
+    }
+
+    .recipe__container{
+        grid-template-columns: 360px 550px;
+        align-items: center;
+        column-gap: 6rem;
+        padding-bottom: 3rem;
+    }
+
+    .recipe__ingredient{
+        column-gap: 1.5rem;
+    }
+
+    .recipe__img{
+        width: 80px;
+    }
+
+    .recipe__name{
+        font-size: var(--h3-font-size);
+    }
+
+    .recipe__description{
+        font-size: var(--normal-font-size);
+    }
+
+    .recipe__image{
+        width: 550px;
+    }
+
+    .products__container{
+        grid-template-columns: repeat(3, 250px);
+        gap: 7.5rem 4rem;
+    }
+
+    .products__card{
+        padding: 10rem 1.5rem 1.5rem;
+        border-radius: 2rem;
+    }
+
+    .products__img{
+        width: 200px;
+        top: -4rem;
+    }
+
+
 }
 
-/*TIME-STAMP 1:09:05  */
+/*TIME-STAMP 1:17:01  */
