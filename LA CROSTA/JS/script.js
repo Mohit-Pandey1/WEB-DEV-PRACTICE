@@ -60,9 +60,19 @@ const scrollActive = () => {
             sectionId = current.getAttribute('id'),
             sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
 
+        const isAtBottom = window.innerHeight + scrollDown >= document.body.offsetHeight;
+
+        const lastSection = sections[sections.length - 1]
+
+
         if(scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight){
             sectionsClass.classList.add('active-link')
         }
+
+        else if(current === lastSection && isAtBottom){
+            sectionsClass.classList.add('active-link')
+        }
+
         else{
             sectionsClass.classList.remove('active-link')
         }
