@@ -476,8 +476,16 @@ img{
 
 /*=============== SPECIAL ===============*/
 .special__container{
-    row-gap: 3rem;
+    background: radial-gradient(circle, hsl(353, 50%, 20%) 0%, hsl(353, 50%, 15%) 100%);
+    padding: 4rem 1.5rem;
+    border-radius: 2rem;
     text-align: center;
+    row-gap: 3rem;
+}
+
+.special__container .section__title,
+.special__container .special__description{
+    color: var(--white-color);
 }
 
 .special__img-container{
@@ -487,7 +495,8 @@ img{
 
 .special__img-banner{
     width: 280px;
-      filter: var(--shadow-big-img);
+    filter: var(--shadow-big-img);
+    animation: pulseBanner 4s infinite ease-in-out;
 }
 
 .special__img-pizza{
@@ -509,6 +518,51 @@ img{
     animation: placePizza 1s ease-out 0.5s forwards;
 }
 
+.special__description{
+    margin-bottom: 1.5rem;
+}
+
+.special__price-badge{
+    display: inline-block;
+    background-color: var(--white-color);
+    color: hsl(237, 51%, 33%);
+    padding: .75rem 1.25rem;
+    border-radius: 50%;
+    font-size: var(--h1-font-size);
+    font-family: var(--second-font);
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 16px hsla(0, 0%, 0%, .2);
+    animation: pulsePrice 2s infinite ease-in-out;
+}
+
+.special__ingredient{
+    position: absolute;
+    width: 40px;
+    opacity: .8;
+    animation: floatingIngredient 3s infinite ease-in-out alternate;
+}
+
+.special__ingredient--1{
+    top: 10%;
+    left: -5%;
+    animation-duration: 4s;
+}
+
+.special__ingredient--2{
+    bottom: 15%;
+    right: -10%;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+.special__ingredient--3{
+    top: 30%;
+    right: -5%;
+    transform: rotate(30deg);
+    animation-duration: 3.5s;
+    animation-delay: 0.5s;
+}
+
 @keyframes placePizza{
     100%{
         opacity: 1;
@@ -516,17 +570,42 @@ img{
     }
 }
 
-.special__description{
-    margin-bottom: 1.5rem;
+@keyframes pulseBanner{
+    0%, 100%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.02);
+    }
 }
 
-.special__price{
+@keyframes pulsePrice{
+    0%, 100%{
+        transform: scale(1) rotate(-5deg);
+    }
+
+    50%{
+        transform: scale(1.05) rotate(5deg);
+    }
+}
+
+@keyframes floatIngredient{
+    from{
+        transform: translateY(-10px) rotate(-15deg);
+    }
+    to{
+        transform: translateY(10px) rotate(15deg);
+    }
+}
+
+/* .special__price{
     display: block;
     font-size: var(--h1-font-size);
     font-family: var(--second-font);
     color: var(--first-color);
     margin-bottom: 2rem;
-}
+} */
 
 /*=============== PRODUCTS ===============*/
 .products__container{
@@ -1138,6 +1217,7 @@ img{
         align-items: center;
         column-gap: 8rem;
         text-align: left;
+        padding: 5rem 4rem;
     }
 
     .special__img-banner{
@@ -1150,6 +1230,14 @@ img{
 
     .special__data .section__title{
         text-align: left;
+    }
+
+    .special__ingredient{
+        width: 60px;
+    }
+
+    .special__ingredient-2{
+        right: -5%;
     }
 
     .products__container{
