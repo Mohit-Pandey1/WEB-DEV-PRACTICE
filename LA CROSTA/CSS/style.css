@@ -487,7 +487,7 @@ img{
 
 .special__img-banner{
     width: 280px;
-    filter: var(--shadow-big-img);
+      filter: var(--shadow-big-img);
 }
 
 .special__img-pizza{
