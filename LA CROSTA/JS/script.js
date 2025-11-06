@@ -105,3 +105,55 @@ sr.reveal('.special__image-container', {
     }
 })
 sr.reveal('.products__card', {interval: 100})
+
+
+const detailsOverlay = document.querySelector('.details__overlay'),
+      detailsClose = document.querySelector('.details__close'),
+      infoButtons = document.querySelectorAll('.products__info-button')
+
+const detailsImg = document.querySelector('.details__img'),
+      detailsName = document.querySelector('.details__name'),
+      detailsDescription = document.querySelector('.details__description'),
+      detailsPrice = document.querySelector('.details__price'),
+      ingredientsList = document.querySelector('.details__ingredients')
+
+
+infoButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        const card = button.closest('.products__card')
+
+        const name = card.getAttribute('data-name'),
+              price = card.getAttribute('data-price'),
+              img = card.getAttribute('data-img'),
+              description = card.getAttribute('data-description'),
+              ingredients = card.getAttribute('data-ingredients').split(',');
+
+              detailsImg.src = img;
+              detailsName.textContent = name;
+              detailsDescription.textContent = description;
+              detailsPrice.textContent = price;
+
+              ingredientsList.innerHTML = '';
+              ingredients.forEach(ingredient => {
+                const li = document.createElement('li');
+                li.textContent = ingredient.trim();
+                ingredientsList.appendChild(li);
+              })
+
+              detailsOverlay.classList.add('show-details');
+    })
+})
+
+const closeDetails = () => {
+    detailsOverlay.classList.remove('show-details');
+}
+
+detailsClose.addEventListener('click', closeDetails);
+
+
+detailsOverlay.addEventListener('click', (e) => {
+    if(e.target === detailsOverlay){
+        closeDetails();
+    }
+})
