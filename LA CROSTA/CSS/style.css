@@ -939,6 +939,7 @@ img{
     justify-content: center;
     column-gap: .25rem;
     margin-bottom: .5rem;
+    /* min-height: 48px; */
 }
 
 .products__info-button {
@@ -1003,11 +1004,13 @@ img{
 .details__name{
     font-size: var(--h2-font-size);
     margin-bottom: .5rem;
+    font-weight: var(--font-semi-bold);
 }
 
 .details__description{
     font-size: var(--small-font-size);
     margin-bottom: 1.5rem;
+    font-weight: var(--font-medium);
 }
 
 .details__group{
@@ -1021,6 +1024,8 @@ img{
 .details__group-title{
     font-size: var(--h3-font-size);
     margin-bottom: .75rem;
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
 }
 
 .details__price{
@@ -1481,6 +1486,28 @@ img{
 
     .footer__content div:nth-child(1){
         justify-self: start;
+    }
+
+    .details__card{
+        max-width: 450px;
+        padding: 3rem;
+    }
+
+    .details__img{
+        width: 200px;
+        margin-bottom: 1rem;
+    }
+
+    .details__content{
+        text-align: left;
+    }
+
+    .details__ingredients{
+        justify-content: flex-start;
+    }
+
+    .details__group{
+        margin-bottom: 2.5rem;
     }
 
     .scrollup{
