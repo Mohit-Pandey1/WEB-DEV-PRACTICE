@@ -367,13 +367,29 @@ img {
 
 
 
-/* TIME STAMP AT 36:51 */
+/* TIME STAMP AT 39:06 */
 
 /*=============== BUTTON ===============*/
 
 
 /*=============== ABOUT ===============*/
+.about{
+  position: absolute;
+}
 
+.about__container{
+  row-gap: 3rem;
+  overflow-y: clip;
+}
+
+.about__data .section__title{
+  margin-bottom: 1.5rem;
+  text-align: initial;
+}
+
+.about__description{
+  font-size: var(--h2-font-size);
+}
 
 /*=============== PROJECTS ===============*/
 
