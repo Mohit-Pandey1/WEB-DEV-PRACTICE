@@ -367,10 +367,34 @@ img {
 
 
 
-/* TIME STAMP AT 39:06 */
+/* TIME STAMP AT 41:30 */
 
 /*=============== BUTTON ===============*/
+.button{
+  background-color: var(--body-color);
+  border: 3px solid var(--first-color);
+  color: var(--title-color);
+  padding: 1rem 2rem;
+  box-shadow: 0 8px 32px hsla(var(--hue), 60%, 64%, .5),
+              inset 8px -8px 30px var(--first-color-alt-2);
+  border-radius: 4rem;
+  font-family: var(--second-font);
+  font-weight: var(--font-semi-bold);
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+  transition: box-shadow .4s;
+}
 
+.button i{
+  font-weight: initial;
+  font-size: 1rem;
+}
+
+.button:hover{
+  box-shadow: 0 8px 48px hsla(var(--hue), 60%, 64%, .7),
+              inset 8px -8px 30px var(--first-color-alt-2);
+}
 
 /*=============== ABOUT ===============*/
 .about{
@@ -389,7 +413,14 @@ img {
 
 .about__description{
   font-size: var(--h2-font-size);
+  margin-bottom: 2rem;
 }
+
+.about__description b{
+  color: var(--first-color);
+  font-weight: var(--font-semi-bold);
+}
+
 
 /*=============== PROJECTS ===============*/
 
