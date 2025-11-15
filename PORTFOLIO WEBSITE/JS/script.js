@@ -26,8 +26,40 @@ animate(chars2, {
   loop: true,
 });
 
-/*=============== SWIPER PROJECTS ===============*/
+// SCROLL HEADER
+const scrollHeader = () => {
+  const header = document.getElementById('header')
+  window.scrollY >= 50 ? header.classList.add('scroll-header')
+                       : header.classList.remove('scroll-header');
+}
 
+window.addEventListener('scroll', scrollHeader)
+/*=============== SWIPER PROJECTS ===============*/
+const swiperProjects = new Swiper('.projects__swiper', {
+  loop: true,
+  spaceBetween: 24,
+  grabCursor: true,
+  speed: 600,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+
+  breakpoints: {
+    540: {
+      slidesPerView: 2,
+    },
+    1150: {
+      slidesPerView: 3,
+    }
+  }
+});
 
 /*=============== WORK TABS ===============*/
 
