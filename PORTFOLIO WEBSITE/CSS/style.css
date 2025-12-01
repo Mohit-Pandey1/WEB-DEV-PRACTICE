@@ -450,6 +450,7 @@ img {
 
 .about__prefil{
   width: 220px;
+  border-radius: 120px;
 }
 
 .about__shadow{
@@ -638,10 +639,11 @@ img {
   height: 100%;
   background: linear-gradient(180deg, 
               hsla(var(--hue), 60%, 64%, 0),
-              var(--first-color));
+              var(--first-color--alt-2));
   position: absolute;
-  left: -.25rem;
+  left: -.25rem
 }
+
 /* Show & hide sections */
 
 
