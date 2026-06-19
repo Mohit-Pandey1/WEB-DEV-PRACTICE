@@ -54,17 +54,60 @@ html, body{
 }
 
 .line h2{
-    font-size: 6.5vw;
+    font-size: 5vw;
     text-transform: uppercase;
+    font-weight: 900;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+    0%{
+        font-family: "Plain Light";
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        font-weight: 500;
+        opacity: 1;
+    }
+    48%{
+        font-family: "Plain Light";
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        font-weight: 500;
+        opacity: 0;
+    }
+    50%{
+        font-family: "Silk Serif";
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        font-weight: 500;
+        opacity: 1;
+    }
+    100%{
+        font-family: "Silk Serif";
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        font-weight: 500;
+        opacity: 0;
+    }
 }
 
 #main{
     position: relative;
-    background-color: #111;
+    background-color: #030303;
 } 
 
 #page1{
     height: 100vh;
     width: 100%;
     background-color: #151515;
+}
+
+
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.3vw 4.5vw;
 }
