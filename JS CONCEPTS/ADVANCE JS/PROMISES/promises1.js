@@ -24,8 +24,7 @@ new Promise(function(resolve, reject){
 }).then(function(){
     console.log("Async 2 resolved");
 })
-
-
+ 
 //3rd promises
 const proimseThree = new Promise(function(resolve, reject){
     setTimeout(function(){

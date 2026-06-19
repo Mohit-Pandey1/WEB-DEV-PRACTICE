@@ -38,6 +38,10 @@ const myObject = {
     game2 : "Modern WarFare"
 }
 
+const myObject1 = {
+    game1: "Alpna",
+    game2: "Angel",
+}
 
 // for (const [key, value] of myObject) {      --> this will not work in this condition[can't print object using forof loop]
 //     console.log(key, '~', value);

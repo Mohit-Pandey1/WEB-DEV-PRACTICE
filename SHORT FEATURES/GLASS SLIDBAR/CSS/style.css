@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root{
+    --header-height: 3.5rem;
+    --white-color: hsl(0, 0%, 100%);
+    --body-font: "Poppins", sans-serif;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+}
+
+@media screen and (min-width: 1150px){
+    :root{
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+    }
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*=============== LAYOUT ===============*/
+.image-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+}
+
+/*=============== HEADER ===============*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    margin: 1rem;
+}
+
+.header__container{
+    width: 100%;
+    height: var(--header-height);
+    background-color: hsla(0, 0%, 0%, .2);
+    backdrop-filter: blur(16px);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1rem;
+}
+
+.header__logo{
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+    color: var(--white-color);
+    font-weight: 500;
+}
+
+.header__logo i{
+    font-size: 1.5rem;
+}
+
+.header__toggle{
+    width: 32px;
+    height: 32px;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    background-color: hsla(0,0%, 0%, .2);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+
+/*=============== SIDEBAR ===============*/
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 232px;
+    background-color: hsla(0, 0%, 0%, .2);
+    backdrop-filter: blur(16px);
+    z-index: 100;
+    padding: 1rem 1rem 1.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    transition: left .4s; 
+}
+
+.sidebar__logo{
+    display: flex;
+    align-items: center;
+    column-gap: .75rem;
+    color: var(--white-color);
+    padding: 0 0 1rem .5rem;
+    font-weight: 500;
+    border-radius: 1px solid hsla(0, 0%, 100%, 
+    .3);
+}
+
+.sidebar__logo i{
+    font-size: 1.5rem;
+}
+
+.sidebar__content{
+    display: grid;
+    row-gap: .5rem;
+    padding-top: 1.5rem;
+}
+
+
+/* Show sidebar */
+
+
+/*=============== DROPDOWN ===============*/
+
+
+/* Rotate drop icon */
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+
+
+/* For large devices */ 
